@@ -1,0 +1,184 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:hsl(217, 54%, 11%);
+    font-family: Outfit;
+
+    .fond-encadre {
+        background-color: hsl(216, 50%, 16%);
+        width: 325px;
+        height: 525px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+
+        .encadre-contenu {
+
+            .encadre-img {
+                margin: 25px;
+                margin-top: 25px;
+                margin-bottom: 20px;
+                width: 85%;
+                height: 40%;
+
+                .img-nft {
+                    display: flex;
+                    width: 100%;
+                    height:100%;
+                    margin: auto;
+                    border-radius: 10px;
+                }
+
+                &:hover {
+                    .hover {
+                        display: block;
+                        cursor: pointer;
+                    }
+                }
+                .hover {
+                    display: none;
+                    .hover-img {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: 25px;
+                        background-color: hsl(178, 100%, 50%);
+                        opacity: 0.2;
+                        width: 85%;
+                        height: 53%;
+                        border-radius: 10px;
+    
+                       
+                    }
+    
+                    .view {
+                        position: absolute;
+                        top: 27%;
+                        left: 43%;
+                    }
+
+                }
+                
+            }
+
+            .titre {
+                margin-left: 25px;
+                width: max-content;
+                color: white;
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                font-size: larger;
+
+                &:hover {
+                    color:hsl(178, 100%, 50%) ;
+                    cursor: pointer;
+                }
+            }
+
+            .description {
+                margin: 25px;
+                margin-top: 15px;
+                margin-bottom: 0;
+                width: 85%;
+                color: hsl(215, 51%, 70%);
+                font-weight: 300;
+            }
+
+            .money {
+                display: flex;
+                margin-left: 25px;
+                margin-right: 25px;
+                justify-content: space-between;
+
+                .price {
+                    font-weight: 600;
+                    letter-spacing: 1.5px;
+                    color: hsl(178, 100%, 50%);
+                    align-items: center;
+                    display: flex;
+                    
+                    img {
+                        margin-right: 5px;
+                    }
+                }
+
+                .temps {
+                    font-weight: 400;
+                    color: hsl(215, 51%, 70%);
+                    align-items: center;
+                    display: flex;
+
+                    img {
+                        margin-right: 5px;
+                    }
+                }
+
+                
+            }
+
+            .trait {
+                width: 85%;
+                height: 1px;
+                background-color: hsl(215, 32%, 27%);
+                margin: auto;
+            }
+
+            .creator {
+                color: hsl(215, 51%, 70%);
+                height: 30px;
+                width: 85%;
+                margin: auto;
+                display: flex;
+                margin-top: 15px;
+                align-items: center;
+
+                .avatar {
+                    height: 100%;
+                    border: white 2px solid;
+                    border-radius: 75px;
+                    margin-right: 15px;
+                }
+
+                .name-creator {
+                    color: white;
+                    margin-left: 5px;
+
+                    &:hover {
+                        color:hsl(178, 100%, 50%) ;
+                        cursor: pointer;
+                    }
+                }
+            }
+           
+        }
+    }
+
+    .dev {
+        color: white;
+        margin-left: 15px;
+
+        .lien-dev {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .challenge {
+        position: absolute;
+        color: white;
+        margin-right: 20px;
+        bottom: 0;
+        right: 0;
+
+        .lien-frontend-mentor {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    
+}
